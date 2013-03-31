@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["beyond@be.go"]
   gem.description   = %q{ password digest for 2channel aka trip }
   gem.summary       = %q{ password digest for 2channel aka trip }
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/beyond/digest-trip"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
