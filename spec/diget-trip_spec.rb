@@ -19,7 +19,7 @@ describe Digest::Trip do
     ]
 
     Hash[ *TABLE_OLD ].each do |src, dest|
-      context "#{src} -> #{dest}" do
+      context "#{src} ->" do
         let(:src) { src }
         it { should == dest }
       end
@@ -37,7 +37,7 @@ describe Digest::Trip do
       ]
 
       Hash[ *TABLE_NEW_12 ].each do |src, dest|
-        context "#{src} -> #{dest}" do
+        context "#{src} ->" do
           let(:src) { src }
           it { should == dest }
         end
@@ -50,7 +50,7 @@ describe Digest::Trip do
       ]
 
       Hash[ *TABLE_NEW_13 ].each do |src, dest|
-        context "#{src} -> #{dest}" do
+        context "#{src} ->" do
           let(:src) { src }
           it { should == dest }
         end
