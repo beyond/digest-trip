@@ -1,6 +1,19 @@
 # Digest::Trip
 
-TODO: Write a gem description
+トリップキーから、2ちゃんねるのトリップ（ひとり用キャップ）を生成します。
+
+10桁および12桁に対応しています。生キーには対応していません。
+
+名前とトリップキー（#以降の文字列）は、自分でパースしてください。
+
+## Usage
+
+    require "digest/trip"
+    
+    name= "name#password"
+    name, key = name.split "#", 2
+    trip = Digest::Trip.digest key
+    [name, trip].join "◆"  #=> "name◆ozOtJW9BFA"
 
 ## Installation
 
@@ -15,10 +28,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install digest-trip
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
