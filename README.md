@@ -1,4 +1,4 @@
-# Digest::Trip [![Build Status](https://travis-ci.org/beyond/digest-trip.png?branch=master)](https://travis-ci.org/beyond/digest-trip)
+# Digest::Trip [![Build Status](https://travis-ci.org/beyond/digest-trip.png?branch=master)](https://travis-ci.org/beyond/digest-trip) [![Code Climate](https://codeclimate.com/github/beyond/digest-trip.png)](https://codeclimate.com/github/beyond/digest-trip)
 
 トリップキーから、2ちゃんねるのトリップ（ひとり用キャップ）を生成します。
 
