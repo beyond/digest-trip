@@ -10,24 +10,24 @@ module Digest
     def reset
     end
 
-		def update key
-			@key = key
-		end
+    def update key
+      @key = key
+    end
 
-		def finish
-			key = NKF.nkf '-sxm0', @key
+    def finish
+      key = NKF.nkf '-sxm0', @key
 
-			if key.bytesize >= 12
-				hash = Base64.encode64 Digest::SHA1.digest(key)
-				hash[0, 12].gsub '+', '.'
-			else
-				salt = (key + "H.")[1, 2]
-				salt = salt.gsub %r"[^\.-z]", "."
-				salt = salt.tr ":;<=>?@[\\]^_`", "ABCDEFGabcdef"
+      if key.bytesize >= 12
+        hash = Base64.encode64 Digest::SHA1.digest(key)
+        hash[0, 12].gsub '+', '.'
+      else
+        salt = (key + "H.")[1, 2]
+        salt = salt.gsub %r"[^\.-z]", "."
+        salt = salt.tr ":;<=>?@[\\]^_`", "ABCDEFGabcdef"
 
-				hash = key.crypt salt
-				hash[-10, 10]
-			end
-		end
+        hash = key.crypt salt
+        hash[-10, 10]
+      end
+    end
   end
 end
