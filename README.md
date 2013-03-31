@@ -1,10 +1,10 @@
 # Digest::Trip [![Build Status](https://travis-ci.org/beyond/digest-trip.png?branch=master)](https://travis-ci.org/beyond/digest-trip) [![Code Climate](https://codeclimate.com/github/beyond/digest-trip.png)](https://codeclimate.com/github/beyond/digest-trip)
 
-ƒgƒŠƒbƒvƒL[‚©‚çA2‚¿‚á‚ñ‚Ë‚é‚ÌƒgƒŠƒbƒvi‚Ð‚Æ‚è—pƒLƒƒƒbƒvj‚ð¶¬‚µ‚Ü‚·B
+ãƒˆãƒªãƒƒãƒ—ã‚­ãƒ¼ã‹ã‚‰ã€2ã¡ã‚ƒã‚“ã­ã‚‹ã®ãƒˆãƒªãƒƒãƒ—ï¼ˆã²ã¨ã‚Šç”¨ã‚­ãƒ£ãƒƒãƒ—ï¼‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-10Œ…‚¨‚æ‚Ñ12Œ…‚É‘Î‰ž‚µ‚Ä‚¢‚Ü‚·B¶ƒL[‚É‚Í‘Î‰ž‚µ‚Ä‚¢‚Ü‚¹‚ñB
+10æ¡ãŠã‚ˆã³12æ¡ã«å¯¾å¿œã—ã¦ã„ã¾ã™ã€‚ç”Ÿã‚­ãƒ¼ã«ã¯å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚
 
-–¼‘O‚ÆƒgƒŠƒbƒvƒL[i#ˆÈ~‚Ì•¶Žš—ñj‚ÍAŽ©•ª‚Åƒp[ƒX‚µ‚Ä‚­‚¾‚³‚¢B
+åå‰ã¨ãƒˆãƒªãƒƒãƒ—ã‚­ãƒ¼ï¼ˆ#ä»¥é™ã®æ–‡å­—åˆ—ï¼‰ã¯ã€è‡ªåˆ†ã§ãƒ‘ãƒ¼ã‚¹ã—ã¦ãã ã•ã„ã€‚
 
 ## Usage
 
@@ -13,7 +13,7 @@
     name= "name#password"
     name, key = name.split "#", 2
     trip = Digest::Trip.digest key
-    [name, trip].join "Ÿ"  #=> "nameŸozOtJW9BFA"
+    [name, trip].join "â—†"  #=> "nameâ—†ozOtJW9BFA"
 
 ## Installation
 
